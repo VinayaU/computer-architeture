@@ -1,0 +1,17 @@
+lhld 2004
+xchg
+lhld 2013
+mov c,h
+mvi a,00h
+loop: add d
+dcr c
+jnz loop
+mov h,a
+mov b,l
+mvi a,00h
+lp: add e
+dcr b
+jnz lp
+mov l,a
+shld 2015
+hlt
