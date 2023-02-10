@@ -1,0 +1,12 @@
+lda 2001
+mov b,a
+lda 2005
+mov c,a
+mov a,b
+mvi b,00h
+loop: inr b
+sub c
+jnz loop
+mov a,b
+sta 2010
+hlt
