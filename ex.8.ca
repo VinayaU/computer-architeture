@@ -1,0 +1,19 @@
+lhld 2007
+xchg
+lhld 2012
+mov a,d
+mov b,h
+mvi c,00h
+loop: inr c
+sub b
+jnz loop
+mov h,c
+mov a,e
+mov b,l
+mvi c,00h
+lp: inr c
+sub b
+jnz lp
+mov l,c
+shld 2019
+hlt
