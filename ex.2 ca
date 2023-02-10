@@ -1,0 +1,6 @@
+lda 2002
+mov b,a
+lda 2006
+sub b
+sta 2011
+hlt
